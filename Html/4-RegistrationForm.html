@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Registration from</title>
+</head>
+<body>
+	<h2>Register</h2>
+
+	<form>
+		<label for="fname">First Name : </label>
+		<input id="fname" name="firstname" type="text" placeholder="John">
+		<label for="lname">Last Name : </label>
+		<input id="lname" name="lastname" type="text" placeholder="Smith">
+		<br>
+
+		<label for="gender">Gender : </label>
+		<label>Male <input name="gender" value="male" type="radio"></label>
+		<label>Female <input name="gender" value="female" type="radio"></label>
+		<label>Other <input name="gender" value="other" type="radio"></label>
+
+		<br>
+
+		<label for="email">Email : </label>
+		<input type="email" id="email" name="email" placeholder="Email" required>
+
+		<label for="passwd">Password : </label>
+		<input id="passwd" type="password" name="password" pattern=".{4,8}" required title="4 to 8 chars required">
+
+		<br>
+
+		<label>
+			Birthday : 
+			<select name="month" placeholder="Month">
+				<option value="jan">January</option>
+				<option value="feb">February</option>
+				<option value="mar">March</option>
+			</select>
+			<select name="Day" placeholder="Month">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			<select name="year" placeholder="Month">
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+			</select>
+		</label>
+
+		<br>
+
+		<label>I agree to terms 
+			<input type="checkbox" required>
+		</label>
+		<br>
+		<input type="submit">
+	</form>
+</body>
+</html>
